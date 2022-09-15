@@ -1,0 +1,140 @@
+.home-left {
+  flex: 1;
+}
+.home-right {
+  flex: 1.2;
+}
+.home-right img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.heading-light {
+  font-family: 'Press Start 2P', cursive;
+  color: #ed1c2d;
+  font-size: 37px;
+  text-shadow: 5px 5px 0px RGBA(0, 0, 0, 1);
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.para-light {
+  font-family: 'VT323', monospace;
+  line-height: 1.5;
+  font-size: 35px;
+  text-align: justify;
+}
+
+.time {
+  font-family: 'VT323', monospace;
+  font-size: 100px;
+  line-height: 100px;
+  color: #ed1c2d;
+}
+
+.opensea-btn {
+  font-family: 'Roboto';
+  border-radius: 100px;
+  color: #ffd108;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 2px;
+  background: #ed1c2d;
+  font-size: 23px;
+  font-weight: 900;
+  padding: 30px 60px;
+}
+
+.opensea-btn:hover {
+  background: #eda50e;
+  color: #ed1c2d;
+}
+
+.gov-left {
+  height: fit-content;
+}
+.gov-left img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.gov-right {
+  max-width: 450px;
+}
+
+.heading-dark {
+  font-family: 'Press Start 2P', cursive;
+  color: #ffd108;
+  font-size: 37px;
+  text-shadow: 5px 5px 0px RGBA(237, 28, 45, 1);
+  line-height: 1.6;
+  font-weight: 900;
+}
+
+.para-dark {
+  font-family: 'VT323', monospace;
+  line-height: 1.5;
+  font-size: 35px;
+  color: white;
+  text-align: justify;
+}
+
+.para-dark ul {
+  list-style: none;
+  line-height: 2;
+}
+
+.roadmap-left {
+  flex: 1;
+}
+
+.roadmap-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.7;
+}
+
+.opensea-btn-2 {
+  font-family: 'VT323', monospace;
+  border-radius: 20px;
+  color: #ed1c2d;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 2px;
+  background: #ffd108;
+  font-size: 47px;
+  font-weight: 900;
+  padding: 20px 20px;
+}
+
+.opensea-btn-2:hover {
+  background: #ed1c2d;
+  color: #ffd108;
+}
+
+.footer-icon {
+  border-radius: 100px;
+  padding: 20px;
+  background: #ed1c2d;
+}
+.footer-icon-2 {
+  border-radius: 100px;
+  padding: 20px;
+  background: #ffd108;
+}
+
+.footer-text {
+  font-family: 'VT323', monospace;
+  color: #ffd108;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .heading-dark {
+    font-size: 24px;
+  }
+  .footer-text {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,49 @@
+.header {
+  background: rgb(45, 45, 45);
+  color: #ffe05b;
+  height: 150px;
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  width: 150px;
+}
+
+.logo-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-links ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.header-links-mobile ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 40px;
+}
+
+.header-links-mobile a {
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive !important;
+  color: #ffe05b;
+  font-size: 15px;
+  font-weight: 600;
+}
+.header-links a {
+  text-decoration: none;
+  font-family: 'Press Start 2P', cursive !important;
+  color: #ffe05b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.header-links a:hover {
+  color: #eda50e;
+}
