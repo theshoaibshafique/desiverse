@@ -28,42 +28,50 @@ const Home = () => {
         <Box
           sx={{
             display: 'flex',
-            flexWrap: 'wrap',
-            gap: '10px',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}
         >
-          {['Days', 'Hours', 'Minutes', 'Seconds'].map((item) => (
-            <Box
-              sx={{
-                border: '5px solid #000',
-                borderRadius: '9px',
-                p: '30px',
-                textAlign: 'center',
-                '&:hover': {
-                  border: '5px dotted #000',
-                },
-              }}
-              key={item}
-            >
-              <p className="time">00</p>
-              <p>{item}</p>
-            </Box>
-          ))}
-        </Box>
-        <Box
-          sx={{
-            textAlign: 'center',
-            mt: '60px',
-          }}
-        >
-          <a
-            href="https://opensea.io/desiverse"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="opensea-btn"
+          <Box
+            sx={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '10px',
+            }}
           >
-            Buy on OpenSea
-          </a>
+            {['Days', 'Hours', 'Minutes', 'Seconds'].map((item) => (
+              <Box
+                sx={{
+                  border: '5px solid #000',
+                  borderRadius: '9px',
+                  p: '30px',
+                  textAlign: 'center',
+                  '&:hover': {
+                    border: '5px dotted #000',
+                  },
+                }}
+                key={item}
+              >
+                <p className="time">00</p>
+                <p>{item}</p>
+              </Box>
+            ))}
+          </Box>
+          <Box
+            sx={{
+              textAlign: 'center',
+              mt: '60px',
+            }}
+          >
+            <a
+              href="https://opensea.io/desiverse"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opensea-btn"
+            >
+              Buy on OpenSea
+            </a>
+          </Box>
         </Box>
       </div>
       <div className="home-right">

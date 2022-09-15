@@ -137,4 +137,20 @@
   .footer-text {
     margin-top: 20px;
   }
+  .para-dark {
+    font-size: 24px;
+  }
+  .heading-light {
+    font-size: 26px;
+  }
+  .para-light {
+    font-size: 24px;
+  }
+  .para-dark ul {
+    line-height: 1.5;
+    font-size: 24px;
+  }
+  .opensea-btn {
+    padding: 20px 60px;
+  }
 }
