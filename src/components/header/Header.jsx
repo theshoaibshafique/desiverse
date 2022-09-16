@@ -3,7 +3,7 @@ import SideDrawer from './Drawer';
 import './header.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const Header = ({ currentAccount, connectWalletAction }) => {
   const headerItems = [
@@ -58,11 +58,57 @@ const Header = ({ currentAccount, connectWalletAction }) => {
             </ul>
           </div>
         </Box>
-        <div>
+        <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
+          {currentAccount ? (
+            <Box
+              sx={{
+                border: '1px solid #ffe05b',
+                borderRadius: '10px',
+                p: '20px',
+                cursor: 'pointer',
+                width: '150px',
+                textAlign: 'center',
+                fontWeight: '600',
+              }}
+            >
+              Wallet Connected
+              <Typography
+                variant="subtitle2"
+                sx={{
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                }}
+              >
+                {currentAccount}
+              </Typography>
+            </Box>
+          ) : (
+            <Box
+              onClick={connectWalletAction}
+              sx={{
+                border: '1px solid #ffe05b',
+                borderRadius: '10px',
+                p: '20px',
+                cursor: 'pointer',
+                width: '150px',
+                textAlign: 'center',
+                fontSize: 'large',
+                fontWeight: '600',
+                '&:hover': {
+                  color: '#ffe05b',
+                },
+              }}
+            >
+              Connect Wallet
+            </Box>
+          )}
+        </Box>
+        <Box sx={{ display: { xs: 'block', lg: 'none' } }}>
           <IconButton sx={{ color: '#ffe05b' }} onClick={toggleDrawer(true)}>
             <MenuIcon fontSize="large" />
           </IconButton>
-        </div>
+        </Box>
       </div>
       <SideDrawer
         toggleDrawer={toggleDrawer}

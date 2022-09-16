@@ -20,7 +20,7 @@
 .header-links ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 10px;
 }
 .header-links-mobile ul {
   display: flex;
@@ -40,7 +40,7 @@
   text-decoration: none;
   font-family: 'Press Start 2P', cursive !important;
   color: #ffe05b;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
 }
 
