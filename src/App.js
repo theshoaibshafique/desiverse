@@ -1,12 +1,13 @@
 import './App.css';
-import Header from './components/header/Header';
 import React, { useEffect, useState } from 'react';
+import Comingsoon from './components/Comingsoon';
 
-import Home from './components/Home';
-import Governance from './components/Governance';
-import Bank from './components/Bank';
-import RoadMap from './components/RoadMap';
-import Footer from './components/Footer';
+// import Header from './components/header/Header';
+// import Home from './components/Home';
+// import Governance from './components/Governance';
+// import Bank from './components/Bank';
+// import RoadMap from './components/RoadMap';
+// import Footer from './components/Footer';
 
 function App() {
   const [currentAccount, setCurrentAccount] = useState(null);
@@ -66,7 +67,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header
+      {/* <Header
         currentAccount={currentAccount}
         connectWalletAction={connectWalletAction}
       />
@@ -74,7 +75,11 @@ function App() {
       <Governance />
       <Bank />
       <RoadMap />
-      <Footer />
+      <Footer /> */}
+      <Comingsoon
+        currentAccount={currentAccount}
+        connectWalletAction={connectWalletAction}
+      />
     </div>
   );
 }
