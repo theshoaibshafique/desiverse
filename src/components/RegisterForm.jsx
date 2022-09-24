@@ -28,12 +28,12 @@ const RegisterForm = ({ currentAccount, connectWalletAction }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (currentAccount && username && email) {
+    if (username && email) {
       setSubmitting(true);
       await addDoc(collection(db, 'registeredUsers'), {
         email,
         username,
-        walletAdrress: currentAccount,
+        walletAdrress: currentAccount || '',
         date: new Date().toLocaleString(),
       });
       setError(false);
