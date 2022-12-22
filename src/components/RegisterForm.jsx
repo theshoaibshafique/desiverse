@@ -122,7 +122,7 @@ const RegisterForm = ({ currentAccount, connectWalletAction }) => {
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         {error ? (
           <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-            Please Fill All Fields or Check if wallet Connected
+            Please Fill All Fields
           </Alert>
         ) : (
           <Alert
